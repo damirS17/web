@@ -1,0 +1,48 @@
+body {
+    height: 100vh;
+}
+.all {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.content {
+    flex: 1 0 auto;
+}
+footer {
+    flex: 0 0 auto;
+}
+
+i {
+    margin-right: 10px;
+}
+.user {
+    font-size: 25px;
+    color: black;
+}
+.books .seeal {
+    margin-left: 20px;
+}
+.carousel-inner {
+    height: 400px;
+}
+.carousel-inner .d-block {
+    height: 500px;
+    object-fit: cover;
+    background-position: center;
+}
+.book-img {
+    height: 450px;
+}
+.book .card {
+    border: none;
+}
+.price {
+    font-size: 28px;
+}
+.similar .card-img {
+    height: 380px;
+}
+.books .card-img {
+    height: 450px;
+}
