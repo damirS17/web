@@ -53,8 +53,13 @@
                 </div>
               </nav>
         </header>
-            <section class="books pt-4">
+            <section class="books login-form pt-4">
                 <div class="container">
+                  
+      <div class="alert disp-none alert-success alert-dismissible fade show" role="alert">
+        you have successfully logged in
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
                     <div class="row d-flex align-items-center justify-content-center">
                         <div class="col-6">
                             <div class="card">
@@ -74,7 +79,7 @@
                                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
                                     </div>
-                                    <button type="submit" class="btn btn-dark">Submit</button>
+                                    <button type="submit" class="submit btn btn-dark">Submit</button>
                                 </form>
                                 </div>
                               </div>
@@ -87,8 +92,16 @@
             2022.All rights reserved.
         </footer>
     </div>
+    <script>
+      let alert = document.querySelector(".login-form .alert");
+      let submit = document.querySelector(".login-form .submit");
+      submit.addEventListener("click", function(){
+          alert.classList.remove("disp-none");
+          alert.classList.add("disp-block");
+      })
+    </script>
     
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
